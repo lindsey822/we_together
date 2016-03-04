@@ -131,6 +131,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+    '/usr/local/lib/python3.5/site-packages/django_facebook/static/',
+    '/Users/Lindsey/GitHub/we_together/static',
+]
 
 # Facebook App Settings
 FACEBOOK_APP_ID = '840380179440647'
